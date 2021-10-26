@@ -12,8 +12,7 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
 	text: "Click me",
-	onClick: () => {},
-	invertColors: false
+	onClick: () => {}
 };
 
 // Storybook
