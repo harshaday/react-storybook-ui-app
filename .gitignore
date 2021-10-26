@@ -1,0 +1,25 @@
+# Dependencies
+/node_modules
+
+# Testing
+/coverage
+
+# Build
+/build
+/tmp
+/dist
+/dist-storybook
+
+# Generated TypeScript definitions
+/types
+
+
+# Misc
+.DS_Store
+PERSONAL.md
+_demo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
