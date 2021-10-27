@@ -6,7 +6,10 @@ import Button from './Button';
 
 const ButtonStorybook: Meta = {
   title: "Atoms/Button",
-  component: Button
+  component: Button,
+  argTypes:{
+    onclick:{action: 'clicked'}
+}
 };
 
 // Export
@@ -19,6 +22,10 @@ export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   label: 'Button',
+  onClick: () => {
+    console.log("click");
+    
+  }
 };
 
 export const Secondary = Template.bind({});

@@ -11,6 +11,18 @@ export const PostCardWrapper = styled.div`
     margin-bottom: 1rem;
     margin-left: 1rem;
 
+    .cardBody {
+    margin: 1rem 2rem 3rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .cardFooter{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+
     .cardTitle{
         font-weight: bold;
         font-size: 1.5rem;
@@ -33,7 +45,7 @@ export const PostCardWrapper = styled.div`
 export const PostDetailCardWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    width: 75%;
+    width: 100%;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
@@ -45,6 +57,13 @@ export const PostDetailCardWrapper = styled.div`
         height: 100%;
         border-radius: calc(.25rem - 1px) 0 0 calc(.25rem - 1px);
     }
+
+    
+  .cardBody{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
 
     div{
         flex: 1 1 auto;

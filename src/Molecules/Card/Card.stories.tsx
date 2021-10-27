@@ -1,18 +1,21 @@
 import React from 'react';
 
 import { ComponentStory,Meta } from '@storybook/react'
- import Card from './Card'
+ import StoryCard from './Card'
 
 const CardStory: Meta = {
     title: "Molecules/Card",
-    component: Card
+    component: StoryCard,
+    argTypes:{
+        onclick:{action: 'clicked'}
+    }
   };
   
   // Export
   
   export default CardStory;
 
-  const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
+  const Template: ComponentStory<typeof StoryCard> = (args) => <StoryCard {...args} />;
 
 export const PostsCard = Template.bind({});
 PostsCard.args = {

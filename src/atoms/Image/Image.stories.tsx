@@ -1,19 +1,19 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta, Meta } from '@storybook/react';
 
-import Image from './Image';
+import StoryImage from './Image';
 // import { Icon } from '../Icon/Icon';
 
 const ImageStory: Meta = {
   title: "Atoms/Image",
-  component: Image
+  component: StoryImage
 };
 
 // Export
 
 export default ImageStory;
 
-const Template: ComponentStory<typeof Image> = (args:any) => <Image {...args} />;
+const Template: ComponentStory<typeof StoryImage> = (args:any) => <StoryImage {...args} />;
 
 export const DefaultImage = Template.bind({});
 DefaultImage.args = {
