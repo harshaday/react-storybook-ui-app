@@ -1,7 +1,7 @@
 {
-	"name": "react-storybook",
+	"name": "react-storybook-ui-app",
 	"description": "Storybook",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"license": "UNLICENSED",
 	"author": "Himanshu Gera <h.gera@accenture.com>",
 	"contributors": [],
