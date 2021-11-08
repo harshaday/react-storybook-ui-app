@@ -1,28 +1,22 @@
 {
-	"name": "react-storybook-ui-app",
-	"description": "Storybook",
-	"version": "0.0.8",
-	"license": "UNLICENSED",
-	"author": "Himanshu Gera <h.gera@accenture.com>",
-	"contributors": [],
-	"scripts": {
-		"build:cleanup": "rimraf -rf dist types",
-		"build:rollup": "yarn rollup -c",
-		"build": "yarn build:cleanup && yarn build:rollup",
-		"dev": "yarn start",
-		"release": "yarn build:rollup && npm publish && yarn build:cleanup",
-		"start": "start-storybook -p 2000 -s public",
-		"test": "react-scripts test --coverage --watchAll --runInBand"
-	},
-	"engines": {
-		"node": ">=14.16.0"
-	},
-	"devDependencies": {
-		"@babel/plugin-syntax-typescript": "^7.14.5",
-		"@rollup/plugin-commonjs": "^18.0.0",
-		"@rollup/plugin-image": "^2.0.6",
-		"@rollup/plugin-node-resolve": "^11.2.1",
-		"@storybook/addon-actions": "^6.3.8",
+  "name": "react-storybook-ui-app",
+  "description": "Storybook",
+  "version": "0.2.3",
+  "license": "UNLICENSED",
+  "author": "Harshada",
+  "scripts": {
+    "build:cleanup": "rimraf -rf dist types",
+    "build:rollup": "yarn rollup -c",
+    "build": "yarn build:cleanup && yarn build:rollup",
+    "dev": "yarn start",
+    "start": "start-storybook -p 2000 -s public",
+    "test": "react-scripts test --coverage --watchAll --runInBand"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-image": "^2.0.6",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@storybook/addon-actions": "^6.3.8",
     "@storybook/addon-essentials": "^6.3.8",
     "@storybook/addon-links": "^6.3.8",
     "@storybook/preset-create-react-app": "^3.2.0",

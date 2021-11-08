@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 // import { Icon } from '../Icon/Icon';
-import { StorybookButton } from './Button.styled';
+import { StorybookButton } from "./Button.styled";
 // import './button.css';
 
 interface ButtonProps {
@@ -16,17 +16,17 @@ interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: "small" | "medium" | "large";
   /**
    * Button contents
    */
   label: string;
 
-  stateModifier?:string;
+  stateModifier?: string;
   /**
    * Optional click handler
    */
-  onClick?: () => void;
+  onClickHandler?: (...args: any[]) => void;
 }
 
 /**
@@ -34,20 +34,28 @@ interface ButtonProps {
  */
 const Button = ({
   primary = false,
-  size = 'medium',
+  size = "medium",
   backgroundColor,
   label,
   color,
   stateModifier,
+  onClickHandler,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary
+    ? "storybook-button--primary"
+    : "storybook-button--secondary";
   return (
     <StorybookButton
       type="button"
       data-testid="storyButton"
-      className={[`storybook-button--${size}`, mode,`storybook-button--${stateModifier}`].join(' ')}
-      style={{ backgroundColor,color }}
+      className={[
+        `storybook-button--${size}`,
+        mode,
+        `storybook-button--${stateModifier}`,
+      ].join(" ")}
+      style={{ backgroundColor, color }}
+      onClick={onClickHandler}
       {...props}
     >
       {/* {
